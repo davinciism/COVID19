@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1250px) {
+  .container {
+    width: 55%;
+  }
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 0px 50px 0px #dbd9d9;
+          box-shadow: 0px 0px 50px 0px #dbd9d9;
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  line-height: 1.6;
+}
+
+a {
+  color: #000;
+}
+
+a:visited {
+  color: #000;
+}
+
+header {
+  height: auto;
+  background-color: #fff;
+  padding: 0 10px;
+  padding-bottom: 14px;
+}
+
+@media (min-width: 600px) {
+  header {
+    padding: 0 50px;
+  }
+}
+
+header h2 {
+  font-size: 3.4rem;
+  text-align: center;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  color: #aa0000;
+}
+
+header .intro {
+  font-size: 14px;
+  text-align: justify;
+  font-weight: 600;
+}
+
+@media (min-width: 600px) {
+  header .intro {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1250px) {
+  header .intro {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+}
+
+header .stats {
+  width: 100%;
+  margin: 0 auto;
+  padding: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  header .stats {
+    width: 95%;
+    padding: 20px 0;
+  }
+}
+
+@media (min-width: 1250px) {
+  header .stats {
+    width: 60%;
+  }
+}
+
+header .stats .box {
+  width: 33.3%;
+  padding: 16px;
+  margin: 4px;
+  background-color: #fff;
+  color: #aa0000;
+}
+
+header .stats .box h4 {
+  font-size: 36px;
+}
+
+@media (min-width: 600px) {
+  header .stats .box h4 {
+    font-size: 46px;
+  }
+}
+
+@media (min-width: 1250px) {
+  header .stats .box h4 {
+    font-size: 54px;
+  }
+}
+
+header .stats .box p {
+  font-size: 14px;
+  color: #000;
+  font-weight: 800;
+}
+
+header .country {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 0 0 0;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+@media (min-width: 600px) {
+  header .country {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1250px) {
+  header .country {
+    width: 60%;
+  }
+}
+
+header .country .search {
+  width: 100%;
+  /*select{
+                width: 100%;
+                height: 40px;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 800;
+                line-height: 1.6;
+                background-color: ghostwhite !important;//Works with css colors only
+            }   
+            option{
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 800;
+                line-height: 1.6;
+                padding-left: 20px;
+            } */
+}
+
+header .country .search h4 {
+  font-size: 24px;
+  letter-spacing: 10;
+  font-weight: 200;
+  opacity: 0.75;
+  padding-bottom: 8px;
+}
+
+header .country .search .custom-select {
+  display: block;
+  font-size: 16px;
+  font-family: 'Open sans', sans-serif;
+  font-weight: 700;
+  color: #444;
+  line-height: 1.3;
+  padding: .6em 1.4em .5em .8em;
+  width: 100%;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  border: 1px solid #d4d4d4;
+  -webkit-box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAIAAACzY+a1AAAACXBIWXMAABYlAAAWJQFJUiTwAAAEAklEQVR42u3Tu21cUQyEYe5iA5egKrSA6nBrSrcXuwx1IChT5sSAo+tAhqHHPu7jHHJmzvwZGZL4dj/u7389PYXj7Nvd3f7hdPIheDs+Pu6mafp5PBoiKcHvLy/7iDBEYoKHw26apogwRFKCu8Nh/zYbIinBiPin0BBJCUbE/v/WEBkJflBoiIwEPyg0REaCnxUaIh3BzwoNkY7gGYWGyEXwjEJD5CJ4XqEhEhE8r9AQiQheVGiILAQvKjREFoLXFBoiBcFrCg2RguANhYaIT/CGQkPEJ3hboSGCE7yt0BDBCc5SaIjIBGcpNERkgnMVGiIswbkKDRGW4AKFhohJcIFCQ8QkuEyhIQISXKbQEAEJLlZoiGgEFys0RDSCaxQaIhTBNQoNEYrgSoWGiENwpUJDxCG4XqEhghBcr9AQQQhuUmiICAQ3KTREBIJbFRpiOcGtCg2xnGADhYZYS7CBQkOsJdhGoSEWEmyj0BALCTZTaIhVBJspNMQqgi0VGmIJwZYKDbGEYGOFhphPsLFCQ8wn2F6hISYTbK/QEJMJdlFoiJkEuyg0xEyCvRQaYhrBXgoNMY1gR4WGmEOwo0JDzCHYV6EhJhDsq9AQEwh2V2iIvQl2V2iIvQlmKBwZYgLBDIUjQ0wgmKRwTIg5BJMUjgkxh2CewtEgphHMUzgaxDSCqQrHgZhJMFXhOBAzCWYrHAFiMsFshSNATCZYoFAbYj7BAoXaEPMJ1ihUhVhCsEahKsQSgmUK9SBWESxTqAeximClQiWIhQQrFSpBLCRYrFADYi3BYoUaEGsJ1itkh1hOsF4hO8RyghAKeSEiEIRQyAsRgSCKQkaIIARRFDJCBCEIpJALIg5BIIVcEHEIYilkgQhFEEshC0QognAK8SGiEYRTiA8RjSCiQmSIgAQRFSJDBCQIqhATIiZBUIWYEDEJ4ipEgwhLEFchGkRYgtAKcSAiE4RWiAMRmSC6QgSI4ATRFSJABCdIoLAWIj5BAoW1EPEJciisgkhBkENhFUQKgjQK8yGyEKRRmA+RhSCTwkyIRASZFGZCJCJIpjAHIhdBMoU5ELkI8insDZGOIJ/C3hDpCFIq7AeRkSClwn4QGQmyKuwBkZQgq8IeEEkJEitsC5GXILHCthB5CXIrbAWRmiC3wlYQqQnSK9wOkZ0gvcLtENkJKijcAlGAoILCLRAFCIooXAdRg6CIwnUQNQjqKFwKUYagjsKlEGUISimcD1GJoJTC+RCVCKopnANRjKCawjkQxQgKKrwOUY+goMLrEPUIaiq8BFGSoKbCSxAlCcoq/ApRlaCswq8QVQkqK3wPUZigssL3EIUJiit8g/jn9VWYYEQcQrqH0+n387Pw/yLiL1avaQIlFa/lAAAAAElFTkSuQmCC"), -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e5e5e5));
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAIAAACzY+a1AAAACXBIWXMAABYlAAAWJQFJUiTwAAAEAklEQVR42u3Tu21cUQyEYe5iA5egKrSA6nBrSrcXuwx1IChT5sSAo+tAhqHHPu7jHHJmzvwZGZL4dj/u7389PYXj7Nvd3f7hdPIheDs+Pu6mafp5PBoiKcHvLy/7iDBEYoKHw26apogwRFKCu8Nh/zYbIinBiPin0BBJCUbE/v/WEBkJflBoiIwEPyg0REaCnxUaIh3BzwoNkY7gGYWGyEXwjEJD5CJ4XqEhEhE8r9AQiQheVGiILAQvKjREFoLXFBoiBcFrCg2RguANhYaIT/CGQkPEJ3hboSGCE7yt0BDBCc5SaIjIBGcpNERkgnMVGiIswbkKDRGW4AKFhohJcIFCQ8QkuEyhIQISXKbQEAEJLlZoiGgEFys0RDSCaxQaIhTBNQoNEYrgSoWGiENwpUJDxCG4XqEhghBcr9AQQQhuUmiICAQ3KTREBIJbFRpiOcGtCg2xnGADhYZYS7CBQkOsJdhGoSEWEmyj0BALCTZTaIhVBJspNMQqgi0VGmIJwZYKDbGEYGOFhphPsLFCQ8wn2F6hISYTbK/QEJMJdlFoiJkEuyg0xEyCvRQaYhrBXgoNMY1gR4WGmEOwo0JDzCHYV6EhJhDsq9AQEwh2V2iIvQl2V2iIvQlmKBwZYgLBDIUjQ0wgmKRwTIg5BJMUjgkxh2CewtEgphHMUzgaxDSCqQrHgZhJMFXhOBAzCWYrHAFiMsFshSNATCZYoFAbYj7BAoXaEPMJ1ihUhVhCsEahKsQSgmUK9SBWESxTqAeximClQiWIhQQrFSpBLCRYrFADYi3BYoUaEGsJ1itkh1hOsF4hO8RyghAKeSEiEIRQyAsRgSCKQkaIIARRFDJCBCEIpJALIg5BIIVcEHEIYilkgQhFEEshC0QognAK8SGiEYRTiA8RjSCiQmSIgAQRFSJDBCQIqhATIiZBUIWYEDEJ4ipEgwhLEFchGkRYgtAKcSAiE4RWiAMRmSC6QgSI4ATRFSJABCdIoLAWIj5BAoW1EPEJciisgkhBkENhFUQKgjQK8yGyEKRRmA+RhSCTwkyIRASZFGZCJCJIpjAHIhdBMoU5ELkI8insDZGOIJ/C3hDpCFIq7AeRkSClwn4QGQmyKuwBkZQgq8IeEEkJEitsC5GXILHCthB5CXIrbAWRmiC3wlYQqQnSK9wOkZ0gvcLtENkJKijcAlGAoILCLRAFCIooXAdRg6CIwnUQNQjqKFwKUYagjsKlEGUISimcD1GJoJTC+RCVCKopnANRjKCawjkQxQgKKrwOUY+goMLrEPUIaiq8BFGSoKbCSxAlCcoq/ApRlaCswq8QVQkqK3wPUZigssL3EIUJiit8g/jn9VWYYEQcQrqH0+n387Pw/yLiL1avaQIlFa/lAAAAAElFTkSuQmCC"), linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: right .7em top 50%, 0 0;
+  background-size: .65em auto, 100%;
+}
+
+header .country .search .custom-select::-ms-expand {
+  display: none;
+}
+
+header .country .search .custom-select:hover {
+  border-color: #888;
+}
+
+header .country .search .custom-select:focus {
+  border-color: #aa0000;
+  color: #222;
+  outline: none;
+}
+
+header .country .search .custom-select option {
+  font-weight: normal;
+}
+
+header .country .result {
+  padding: 15px 0;
+}
+
+header .country .result h4 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+@media (min-width: 1250px) {
+  header .country .result h4 {
+    font-size: 28px;
+  }
+}
+
+header .country .result ul {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  line-height: 1.6;
+}
+
+@media (min-width: 1250px) {
+  header .country .result ul {
+    font-size: 22px;
+  }
+}
+
+header .country .result ul li span {
+  font-weight: 600;
+}
+
+@media (min-width: 1250px) {
+  header {
+    padding-bottom: 30px;
+  }
+}
+
+main {
+  background-color: #fff;
+  padding: 0 10px;
+}
+
+@media (min-width: 600px) {
+  main {
+    padding: 0 50px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+main nav {
+  width: 100%;
+  margin: 0px 0;
+  padding: 20px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  z-index: 100;
+}
+
+@media (min-width: 1250px) {
+  main nav {
+    margin-bottom: 20px;
+  }
+}
+
+main nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+main nav ul a {
+  display: block;
+  width: 33%;
+  font-size: 2rem;
+  text-align: center;
+  color: #aa0000;
+}
+
+@media (min-width: 1250px) {
+  main nav ul a {
+    font-size: 3rem;
+  }
+}
+
+main nav ul a:visited {
+  color: #aa0000;
+}
+
+main #symptoms, main #prevention, main #treatment {
+  margin: 30px 0;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 600px) {
+  main #symptoms, main #prevention, main #treatment {
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 1250px) {
+  main #symptoms, main #prevention, main #treatment {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+main #symptoms h3, main #prevention h3, main #treatment h3 {
+  text-decoration: underline;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+@media (min-width: 1250px) {
+  main #symptoms h3, main #prevention h3, main #treatment h3 {
+    font-size: 2.0rem;
+  }
+}
+
+main #symptoms p, main #prevention p, main #treatment p {
+  line-height: 1.8;
+  text-align: justify;
+}
+
+@media (min-width: 1250px) {
+  main #symptoms p, main #prevention p, main #treatment p {
+    font-size: 18px;
+  }
+}
+
+main #symptoms h2, main #prevention h2, main #treatment h2 {
+  font-size: 14px;
+  opacity: 0.95;
+  font-family: 'open sans', sans-serif;
+  padding: 10px 0;
+}
+
+@media (min-width: 1250px) {
+  main #symptoms h2, main #prevention h2, main #treatment h2 {
+    font-size: 18px;
+  }
+}
+
+main #symptoms ul, main #prevention ul, main #treatment ul {
+  margin-bottom: 10px;
+}
+
+main #symptoms li, main #prevention li, main #treatment li {
+  margin-left: 18px;
+  opacity: 0.75;
+  font-family: 'open sans', sans-serif;
+  font-size: 15px;
+}
+
+@media (min-width: 1250px) {
+  main #symptoms li, main #prevention li, main #treatment li {
+    font-size: 18px;
+  }
+}
+
+main #symptoms a, main #prevention a, main #treatment a {
+  color: #aa0000;
+  font-size: 14px;
+  font-family: 'open sans', sans-serif;
+  font-weight: 800;
+  display: block;
+  margin: 10px 0;
+}
+
+@media (min-width: 1250px) {
+  main #symptoms a, main #prevention a, main #treatment a {
+    font-size: 18px;
+  }
+}
+
+main #symptoms a:visited, main #prevention a:visited, main #treatment a:visited {
+  color: #aa0000;
+}
+
+footer {
+  background-color: #fff;
+  padding: 15px 10px;
+}
+
+footer p {
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+footer strong {
+  font-family: 'open sans', sans-serif;
+}
+
+@media (min-width: 600px) {
+  footer {
+    padding: 50px;
+    width: 78%;
+    margin: 0 auto;
+  }
+  footer p, footer strong {
+    font-size: 18px;
+    line-height: 2.0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
