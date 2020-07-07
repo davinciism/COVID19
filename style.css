@@ -99,7 +99,6 @@ header .intro {
 header .stats {
   width: 100%;
   margin: 0 auto;
-  padding: 5px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,7 +119,7 @@ header .stats {
 }
 
 header .stats .box {
-  width: 33.3%;
+  width: 30%;
   padding: 16px;
   margin: 4px;
   background-color: #fff;
@@ -262,7 +261,7 @@ header .country .result h4 {
 header .country .result ul {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.6;
 }
 
