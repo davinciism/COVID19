@@ -69,18 +69,18 @@ fetch(request)
 .then(json => {
     console.log(json)
     name.innerHTML = json.country;
-    total.innerHTML = json.cases;
-    casesToday.innerHTML = json.todayCases;
-    rec.innerHTML = json.recovered;
-    dec.innerHTML = json.deaths;
+    total.innerHTML = numberWithCommas(json.cases);
+    casesToday.innerHTML = numberWithCommas(json.todayCases);
+    rec.innerHTML = numberWithCommas(json.recovered);
+    dec.innerHTML = numberWithCommas(json.deaths);
     if(json.totalTests == 0 || json.testsPerOneMillion == 0)
     {
         tests.innerHTML = 'Not Recorded'
         testsPer.innerHTML = 'Not Recorded';
     }
     else{
-        tests.innerHTML = json.totalTests;
-        testsPer.innerHTML = json.testsPerOneMillion;
+        tests.innerHTML = numberWithCommas(json.totalTests);
+        testsPer.innerHTML = numberWithCommas(json.testsPerOneMillion);
     }
 })
 
@@ -92,19 +92,23 @@ function getCountryStats(){
     .then(json => {
         console.log(json)
         name.innerHTML = json.country;
-        total.innerHTML = json.cases;
-        casesToday.innerHTML = json.todayCases;
-        rec.innerHTML = json.recovered;
-        dec.innerHTML = json.deaths;
+        total.innerHTML = numberWithCommas(json.cases);
+        casesToday.innerHTML = numberWithCommas(json.todayCases);
+        rec.innerHTML = numberWithCommas(json.recovered);
+        dec.innerHTML = numberWithCommas(json.deaths);
         if(json.totalTests == 0 || json.testsPerOneMillion == 0)
         {
             tests.innerHTML = 'Not Recorded'
             testsPer.innerHTML = 'Not Recorded';
         }
         else{
-            tests.innerHTML = json.totalTests;
-            testsPer.innerHTML = json.testsPerOneMillion;
+            tests.innerHTML = numberWithCommas(json.totalTests);
+            testsPer.innerHTML = numberWithCommas(json.testsPerOneMillion);
         }
     })
     .catch(err => alert("Country Details Not Found"))
+}
+
+function numberWithCommas(n) {
+    return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
