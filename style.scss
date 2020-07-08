@@ -9,7 +9,7 @@ $tablet:600px;
         @content;
     }
 } 
-$desktop:1250px;
+$desktop:1500px;
 @mixin desktop{
     @media(min-width: #{$desktop}){
         @content;
@@ -21,6 +21,7 @@ $desktop:1250px;
     margin: 0;
     padding: 0;
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -63,8 +64,9 @@ header{
     @include tablet{
         padding: 0 $desktop-padding;
     }
+
     h2{
-        font-size: 3.4rem;
+        font-size: 2.8rem;
         text-align: center;
         padding-bottom: 10px;
         text-transform: uppercase;

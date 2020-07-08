@@ -25,7 +25,7 @@ body {
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1500px) {
   .container {
     width: 55%;
   }
@@ -69,7 +69,7 @@ header {
 }
 
 header h2 {
-  font-size: 3.4rem;
+  font-size: 2.8rem;
   text-align: center;
   padding-bottom: 10px;
   text-transform: uppercase;
@@ -88,7 +88,7 @@ header .intro {
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1500px) {
   header .intro {
     width: 80%;
     margin: 0 auto;
@@ -112,7 +112,7 @@ header .stats {
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1500px) {
   header .stats {
     width: 60%;
   }
@@ -136,7 +136,7 @@ header .stats .box h4 {
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1500px) {
   header .stats .box h4 {
     font-size: 54px;
   }
@@ -163,7 +163,7 @@ header .country {
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1500px) {
   header .country {
     width: 60%;
   }
@@ -252,7 +252,7 @@ header .country .result h4 {
   padding-bottom: 5px;
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1500px) {
   header .country .result h4 {
     font-size: 28px;
   }
@@ -265,7 +265,7 @@ header .country .result ul {
   line-height: 1.6;
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1500px) {
   header .country .result ul {
     font-size: 22px;
   }
@@ -275,7 +275,7 @@ header .country .result ul li span {
   font-weight: 600;
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1500px) {
   header {
     padding-bottom: 30px;
   }
@@ -306,7 +306,7 @@ main nav {
   z-index: 100;
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1500px) {
   main nav {
     margin-bottom: 20px;
   }
@@ -327,7 +327,7 @@ main nav ul a {
   color: #aa0000;
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1500px) {
   main nav ul a {
     font-size: 3rem;
   }
@@ -348,7 +348,7 @@ main #symptoms, main #prevention, main #treatment {
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1500px) {
   main #symptoms, main #prevention, main #treatment {
     width: 85%;
     margin: 0 auto;
@@ -363,7 +363,7 @@ main #symptoms h3, main #prevention h3, main #treatment h3 {
   letter-spacing: 1.5px;
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1500px) {
   main #symptoms h3, main #prevention h3, main #treatment h3 {
     font-size: 2.0rem;
   }
@@ -374,7 +374,7 @@ main #symptoms p, main #prevention p, main #treatment p {
   text-align: justify;
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1500px) {
   main #symptoms p, main #prevention p, main #treatment p {
     font-size: 18px;
   }
@@ -387,7 +387,7 @@ main #symptoms h2, main #prevention h2, main #treatment h2 {
   padding: 10px 0;
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1500px) {
   main #symptoms h2, main #prevention h2, main #treatment h2 {
     font-size: 18px;
   }
@@ -404,7 +404,7 @@ main #symptoms li, main #prevention li, main #treatment li {
   font-size: 15px;
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1500px) {
   main #symptoms li, main #prevention li, main #treatment li {
     font-size: 18px;
   }
@@ -419,7 +419,7 @@ main #symptoms a, main #prevention a, main #treatment a {
   margin: 10px 0;
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1500px) {
   main #symptoms a, main #prevention a, main #treatment a {
     font-size: 18px;
   }
